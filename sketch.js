@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
+let cor;
+let posicaoHorzontal
+let posicaoVertical
 
-  </head>
-  <body>
-    <main>
-    </main>
-    <script src="sketch.js"></script>
-  </body>
-</html>
+function setup(){
+ createCanvas(400, 400);
+  background(color(100, 0, 0));
+ cor = color(random(0, 255), random(0, 255),random(0 ,255)); 
+  posicaoHorizontal = 200;
+  posicaoVertical =200;
+}
+
+function draw() {
+fill(cor);
+circle(posicaoHorizontal, posicaoVertical, 50);
+} 
